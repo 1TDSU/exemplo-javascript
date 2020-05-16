@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+
+.links{
+  text-decoration: none;
+  color: #000000;
+  font-size: 32px;
+  font-weight: bold;
+}

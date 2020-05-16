@@ -1,0 +1,38 @@
+  <!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="stylesheet" href="./css/style-base.css" type="text/css">
+     <link rel="stylesheet" href="./css/ex-03-js.css" type="text/css">
+
+     <script type="text/javascript">
+
+     </script>
+
+     <title>EXEMPLOS-JS</title>
+   </head>
+   <body>
+     <div class="container">
+        <header>
+          <nav id="menu">
+            <ul>
+              <li><a class="links" href="index.html">Início</a></li>
+              <li><a class="links" href="ex-01-js.html">Exemplo-1</a></li>
+              <li><a class="links" href="ex-02-js.html">Exemplo-2</a></li>
+              <li><a class="links" href="ex-03-js.html">Exemplo-3</a></li>
+              <li><a class="links" href="ex-04-js.html">Exemplo-4</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <button type="button" name="btn-botao-1" onclick="document.getElementById('menu').style.backgroundColor = '#ff0000';">COLORIR</button>
+        <button type="button" name="btn-botao-2" onclick="document.getElementById('menu').style.backgroundColor = 'transparent';">DESCOLORIR</button>
+        <button type="button" name="btn-botao-3" onclick="document.getElementsByClassName('links')[3].style.backgroundColor = '#00ff00';">Alterar-Link</button>
+        <div onmouseover="document.getElementsByClassName('links')[3].style.backgroundColor = '#00ff00';" onmouseleave="document.getElementsByClassName('links')[3].style.backgroundColor = 'transparent';">Alterar-Link</div>
+        <noscript>
+          <h1>SEM JAVASCRIPT NÃO ROLA!!!!</h1>
+        </noscript>
+     </div>
+   </body>
+</html>
