@@ -1,0 +1,91 @@
+  <!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="stylesheet" href="./css/style-base.css" type="text/css">
+
+     <!-- 2ª Forma BLOCO SCRIPT -->
+       <script type="text/javascript">
+           //Comentário de Linha
+           /**
+             Comentário
+             de
+             Bloco
+           ***/
+
+           //Declaração de variáveis
+       </script>
+     <!-- 2ª Forma BLOCO SCRIPT -->
+
+     <title>EXEMPLOS-JS</title>
+   </head>
+   <body>
+     <div class="container">
+       <header>
+         <nav>
+           <ul>
+             <li><a href="index.html">Início</a></li>
+             <li><a href="ex-01-js.html">Exemplo-1</a></li>
+             <li><a href="ex-02-js.html">Exemplo-2</a></li>
+             <li><a href="ex-03-js.html">Exemplo-3</a></li>
+             <li><a href="ex-04-js.html">Exemplo-4</a></li>
+             <li><a href="ex-05-js.html">Exemplo-5</a></li>
+           </ul>
+         </nav>
+       </header>
+
+          <!-- EXISTEM 3 FORMAS DE UTILIZAR O JAVASCRIPT
+          1 - INLINE
+          2 - NO BLOCO SCRIPT
+          3 - ARQUIVO EXTERNO .JS
+          -->
+
+        <!-- 1ª Forma INLINE -->
+        <button type="button" name="btn-botao" onclick="document.write('VOID')">ENVIAR</button>
+        <!-- 1ª Forma INLINE -->
+
+        <!-- 2ª Forma BLOCO SCRIPT -->
+          <script type="text/javascript">
+              //Comentário de Linha
+              /**
+                Comentário
+                de
+                Bloco
+              ***/
+
+              //Declaração de variáveis
+              var nome   = "Raissa";
+              var idade  = 33;
+              var teste  = false;
+              var genero = 'f';
+              var nomes  = ['José','Maria'];
+
+              //Apresentando os valores destas variáveis....
+              //Utiliza o console.log
+              console.log("Nome: " + nome +"\nIdade: "+ idade +"\nCasada: "+
+              (teste == true ? "SIM" : "NÃO")+"\nGenero: "+(genero == 'm' ? "Masculino" : "Feminino")+
+              "\nUm nome qualquer : "+nomes[1]);
+
+              //Estrutura de decisão IF/ELSE utilizando ESTRITO (===)
+              var str = "10";
+              var nr  =  10;
+              var result;
+              //O resultado aqui vai ser true, porque estamos avaliando o conteúdo!
+              if(str == nr){
+                 console.warn("O conteúdo das variáveis é igual!");
+              }else {
+                console.warn("O conteúdo das variáveis não é igual!");
+              }
+              //O resultado aqui vai ser false, porque estamos avaliando o tipo!
+              if(str === nr){
+                 console.error("O conteúdo das variáveis é igual!");
+              }else {
+                console.error("O conteúdo das variáveis não é igual!");
+              }
+          </script>
+        <!-- 2ª Forma BLOCO SCRIPT -->
+
+     </div>
+   </body>
+</html>
