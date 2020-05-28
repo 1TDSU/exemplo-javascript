@@ -13,4 +13,33 @@ body{
 
 h1, h2, h3{
   margin: 20px 10px;
+  font-size: 24px;
+  margin-left: 0px;
+}
+.container{
+  margin: auto;
+  background-color: #7fffd4;
+  width: 90%;
+  height: 800px;
+  font-size: 20px;
+
+}
+ul li{
+  font-weight: bold;
+  list-style: none;
+  display: inline;
+  margin-left: 200px;
+
+}
+a{
+  text-decoration: none;
+  color: cadetblue;
+  font-size: 24px;
+}
+header{
+  background-color: cornsilk;
+  
+}
+a:hover{
+  color: thistle;
 }

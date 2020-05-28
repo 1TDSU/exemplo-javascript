@@ -12,7 +12,7 @@
      <div class="container">
         <header>
           <nav>
-            <ul>
+            <ul class="menu">
               <li><a href="index.html">Início</a></li>
               <li><a href="ex-01-js.html">Exemplo-1</a></li>
               <li><a href="ex-02-js.html">Exemplo-2</a></li>
@@ -21,10 +21,13 @@
             </ul>
           </nav>
         </header>
-        <button type = "button" name="btn-bot" onclick="document.write('VOID')">Enviar</button>
-        <div id="box-1">
-
-        </div>
+        <button type = "button" name="btn-bot" onclick="document.getElementById('box-1').innerHTML = 'Ta funcionando filhão!'">Enviar</button>
+        <button type = "button" name="btn-bot" onclick="document.getElementById('pzinho').innerHTML = 'Ta funcionando também filhão!'">testar</button>
+        <div id="box-1">TEXTO-1</div>
+          <p id="pzinho" onmouseover="document.getElementById('tit-1').style.backgroundColor='#ff0000'">DECORAR O TEXTO 4</p>
+          <a href="#">TEXTO-3</a>
+          <h1 id="tit-1" onmouseover="document.getElementById('tit-1').style.backgroundColor='#7fffd4'">TEXTO-4, VOLTAR AO NORMAL</h1>
+          <h2 id="tit-2" onmouseover="document.getElementById('tit-2').innerHTML ='D.O.M'" onmouseout="document.getElementById('tit-2').innerHTML = 'DOCUMENTO OBJECT MODEL'">TEXTO-5</h2>
         <script type ="text/javascript">
           document.getElementById("box-1").innerHTML = "Olá Mundo!";
         </script>
