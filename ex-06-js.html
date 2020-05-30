@@ -4,18 +4,8 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width,initial-scale=1">
      <link rel="stylesheet" href="./css/style-base.css" type="text/css">
+     <script type="text/javascript" src="./js/ex-03.js"></script>
 
-     <script type="text/javascript" src="./js/ex-02.js"></script>
-
-     <!--
-       <script type="text/javascript">
-
-          function minhaPrimeiraFuncao(){
-                console.log("Olá Mundo!");
-            }
-
-       </script>
--->
      <title>EXEMPLOS-JS</title>
    </head>
    <body>
@@ -32,23 +22,32 @@
              <li><a href="ex-06-js.html">Exemplo-6</a></li>
            </ul>
          </nav>
-     </header>
-
-        <div onclick="minhaPrimeiraFuncao()">CLIQUE AQUI PARA EXECUTAR MINHA FUNÇÃO</div>
+       </header>
         <div>
             <form id="frm1" action="#" method="get" onsubmit="return validaForm(this)">
               <fieldset>
                 <legend>CALCULATOR</legend>
                 <div>
-                  <label for="">Nome</label>
-                  <input type="text" id="idCampo1" name="campo1" placeholder="Digite seu nome!" required="required">
+                  <input type="text" id="idVisor" name="visor">
                 </div>
                 <div>
-                  <label for="">Idade</label>
-                  <input type="number" id="idCampo2" name="campo2" placeholder="Digite um número!" required="required">
+                  <input class="btn" type="button" name="b-sum" id="iBSum" value="+" onclick="operacao(iBSum)">
+                  <input class="btn" type="button" name="b-sub" id="iBSub" value="-" onclick="operacao(iBSub)">
+                  <input class="btn" type="button" name="b-mult" id="iBMult" value="X" onclick="operacao(iBMult)">
+                  <input class="btn" type="button" name="b-div" id="iBDiv" value="/" onclick="operacao(iBDiv)">
                 </div>
                 <div>
-                  <input type="submit" value="ENVIAR">
+                  <input class="btn" type="button" name="b1" id="iB1" value="1" onclick="tecla(iB1)">
+                  <input class="btn" type="button" name="b2" id="iB2" value="2" onclick="tecla(iB2)">
+                  <input class="btn" type="button" name="b3" id="iB3" value="3" onclick="tecla(iB3)">
+                  <input class="btn" type="button" name="b4" id="iB4" value="4" onclick="tecla(iB4)">
+                  <input class="btn" type="button" name="b5" id="iB5" value="5" onclick="tecla(iB5)">
+                  <input class="btn" type="button" name="b6" id="iB6" value="6" onclick="tecla(iB6)">
+                  <input class="btn" type="button" name="b7" id="iB7" value="7" onclick="tecla(iB7)">
+                  <input class="btn" type="button" name="b8" id="iB8" value="8" onclick="tecla(iB8)">
+                  <input class="btn" type="button" name="b9" id="iB9" value="9" onclick="tecla(iB9)">
+                  <input class="btn" type="button" name="b0" id="iB0" value="0" onclick="tecla(iB0)">
+                  <input class="btn" type="button" name="b-equal" id="iBEqual" value="=" onclick="resultado(iBEqual)">
                 </div>
               </fieldset>
             </form>

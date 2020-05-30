@@ -40,3 +40,28 @@ a:HOVER{
 header{
   background-color: rgba(23, 24, 22, 0.8);
 }
+
+#frm1{
+  margin: auto;
+  border: solid 2px #0000ff;
+  width: 50%;
+}
+
+#frm1 input[type=text]{
+  width: 80%;
+  max-width: 100%;
+  margin-bottom: 5%;
+}
+
+#frm1 input[name=b0],input[name=b-equal]{
+  width: 50%
+}
+
+#frm1 input[name=b-sum],input[name=b-sub],input[name=b-div],input[name=b-mult]{
+  width: 3%
+}
+
+#frm1 input[type=button]{
+  width: 28%;
+  margin-bottom: 5%;
+}
